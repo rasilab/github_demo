@@ -1,0 +1,24 @@
+bibliography: bibliography.json
+csl: nucleic-acids-research.csl
+link-citations: true
+geometry:
+- margin=0.5in
+linestretch: 1
+mainfont: Helvetica
+fontsize: 11pt
+toc: true
+toc-depth: 1
+header-includes:
+  - \usepackage[modulo]{lineno}
+  # - \linenumbers
+  - \usepackage[colaction]{multicol}
+  # - \newcommand\multicollinenumbers{\linenumbers\def\makeLineNumber{\docolaction{\makeLineNumberLeft}{}{\makeLineNumberRight}}}
+  - \newcommand{\hideFromPandoc}[1]{#1}
+  - \hideFromPandoc{
+      \let\Begin\begin
+      \let\End\end
+    }
+  - \usepackage[font=footnotesize,labelfont=bf]{caption}
+  - \captionsetup{labelformat=empty}
+linkcolor: blue
+urlcolor: blue
