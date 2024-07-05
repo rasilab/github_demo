@@ -695,6 +695,7 @@ Library prep exp65 cytosolic 8x dicodon library in hel2-del and syh1-del cells
 | 66lib4       | syh1_gdna | scKC192::pHPSC1142 gRNA  | 66R1PCR7   | 66cDNA7 | 66gRNA2 | 7         | **4**,5,6           | 11    | 1.42  |
 
 - 2022-09-14 Run stats
+
 | Library name | sample    | oligo  | ix  | qubit | length | target | actual | %target | bt2 aligned |
 | ------------ | --------- | ------ | --- | ----- | ------ | ------ | ------ | ------- | ----------- |
 | 66lib1       | hel2_rna  | oAS127 | 16  | 1.21  | 170    | 50mil  | 14mil  | 28%     | 10mil       |
