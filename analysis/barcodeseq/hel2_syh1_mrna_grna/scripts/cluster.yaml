@@ -1,0 +1,6 @@
+"__default__" :
+  "account" : "rasi"
+  "time" : "24:00:00"
+  "name" : "{rule}.{wildcards}"
+  "mem" : 32
+  "n" : 36

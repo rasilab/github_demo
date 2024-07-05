@@ -1,0 +1,8 @@
+# optional comment for each column  in this row. All commented out rows are preceded by #  which can be ignored by dplyr and pandas.,,,,,,,,,# 1-based indexing,,,,,,
+owner,sample_type,sample_name,plasmid,library_type,illumina_sample_id,sample_id,srr,barcode_read,barcode_start,barcode_length,linkage_ref,r1_file,r2_file,r3_file,i1_file
+kc,dicodon_yeast,hel2_mrna,pHPSC1142,mrna,67lib1-2,67lib1,SRR24831409,1,1,24,yeast_cyto_linkage,kc_67lib1-2_S1_R1_001,kc_67lib1-2_S1_R2_001,,
+kc,dicodon_yeast,hel2_gdna,pHPSC1142,grna,67lib3-2,67lib3,SRR24831408,1,1,24,yeast_cyto_linkage,kc_67lib3-2_S3_R1_001,kc_67lib3-2_S3_R2_001,,
+kc,dicodon_yeast,hel2_mrna_reseq,pHPSC1142,mrna,67lib1-2,67lib1,SRR24725021,1,7,24,yeast_cyto_linkage,kc_67lib1_2_S6_R1_001,kc_67lib1_2_S6_R2_001,kc_67lib1_2_S6_R3_001,kc_67lib1_2_S6_I1_001
+kc,dicodon_yeast,hel2_gdna_reseq,pHPSC1142,grna,67lib3-2,67lib3,SRR24725019,1,7,24,yeast_cyto_linkage,kc_67lib3_2_S7_R1_001,kc_67lib3_2_S7_R2_001,kc_67lib3_2_S7_R3_001,kc_67lib3_2_S7_I1_001
+kc,dicodon_yeast,syh1_mrna,pHPSC1142,mrna,67lib2-2,67lib2,SRR24725020,1,1,24,yeast_cyto_linkage,kc_67lib2-2_S2_R1_001,kc_67lib2-2_S2_R2_001,,
+kc,dicodon_yeast,syh1_gdna,pHPSC1142,grna,67lib4-2,67lib4,SRR24725018,1,1,24,yeast_cyto_linkage,kc_67lib4-2_S4_R1_001,kc_67lib4-2_S4_R2_001,,
