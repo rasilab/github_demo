@@ -1,0 +1,35 @@
+﻿ Tube , RT , dil ,Well
+1, cDNA1 , 1:2 , A1 
+2, cDNA3 , 1:2 , A2 
+3, cDNA5 , 1:2 , A3 
+4, cDNA7 , 1:2 , A4 
+5, cDNA1 , 1:4 , A5 
+6, cDNA3 , 1:4 , A6 
+7, cDNA5 , 1:4 , A7 
+8, cDNA7 , 1:4 , A8 
+9, cDNA1 , 1:8 , B1 
+10, cDNA3 , 1:8 , B2 
+11, cDNA5 , 1:8 , B3 
+12, cDNA7 , 1:8 , B4 
+13, cDNA1 , 1:16 , B5 
+14, cDNA3 , 1:16 , B6 
+15, cDNA5 , 1:16 , B7 
+16, cDNA7 , 1:16 , B8 
+17, cDNA1 , 1:32 , C1 
+18, cDNA3 , 1:32 , C2 
+19, cDNA5 , 1:32 , C3 
+20, cDNA7 , 1:32 , C4 
+21, cDNA1 , 1:64 , C5 
+22, cDNA3 , 1:64 , C6 
+23, cDNA5 , 1:64 , C7 
+24, cDNA7 , 1:64 , C8 
+25, cDNA1 , 1:128 , D1 
+26, cDNA3 , 1:128 , D2 
+27, cDNA5 , 1:128 , D3 
+28, cDNA7 , 1:128 , D4 
+29, H2O , , D5 
+30, cDNA1 , 1:256 , D6 
+31, cDNA3 , 1:256 , D7 
+32, cDNA5 , 1:256 , D8 
+33, cDNA7 , 1:256 , E1 
+34, H2O , , E2 
