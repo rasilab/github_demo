@@ -1,18 +1,17 @@
 # GitHub is an effective platform for collaborative and reproducible laboratory research
 
 ## Getting Started
-- This repository is an example to demonstrate the organizational principles discussed in [Chen et al., 2024](paperurl). 
-- Open an Issue to discuss ideas, experiments, analyses, or literature.
-- Create Issues for Literature, Ideas, Experiments, Analyses.
-- Add experiments, analyses, grants, presentations and manuscripts into `user` subfolder inside each folder.
-- Use the repository for storing all your work except large raw data files.
+- This repository is an example to demonstrate the organizational principles discussed in [Chen et al., 2024](paperurl). Please refer to the text for more details.
+- In each project's repository, open an Issue to discuss ideas, experiments, analyses, or literature.
+  - Create Issue templates (e.g. for Literature, Ideas, Experiments, Analyses) to streamline this process.
 
 ## Repository Organization
-- Experiments, Analyses, Grants, Presentations, and Manuscripts go into separate folders on their own.
+- Experiments, Analyses, Grants, Presentations, and Manuscripts go into separate folders.
 - Each project contributor creates a sub-folder within the above folders to store their work.
-- Do not store data files in the repository. Instead, create symbolic links from where the data is stored (e.g. server or cloud-based storage).
- 
- ### Experiments
+- Do not store data files in the repository. Instead, create symbolic links from where the data is stored (e.g. server or cloud-based storage) so it can be easily accessed in the future.
+- The described structure allows all users to be able push to the ```main``` branch without introducing merge conflicts, so we do not generally find added benefit in using branches.
+
+### Experiments
 ```
 experiments
     |--USER
@@ -96,8 +95,9 @@ presentations
 
 ## Software Installation
 
-- Install Docker, VSCode, and the VSCode Remote Development Extension pack as described [here](https://code.visualstudio.com/docs/remote/containers#_getting-started).
-- Use Docker to pull the containers necessary for your analyses. Example containers from our registry are here:
+- Install [Docker](https://docs.docker.com/engine/install/) and [VSCode](https://code.visualstudio.com/download).
+- In VSCode, install the [Remote Tunnels](https://code.visualstudio.com/docs/remote/tunnels) extension.
+- Use Docker to pull the containers necessary for your analyses. Commonly used containers from our registry include:
   - [R](https://github.com/rasilab/r/pkgs/container/r)
   - [Python](https://github.com/rasilab/python/pkgs/container/python)
   - [R and Python](https://github.com/rasilab/r_python/pkgs/container/r_python)
@@ -107,14 +107,13 @@ presentations
 
 ```docker run -i -d --name pandoc-latex -v $HOME:$HOME ghcr.io/rasilab/pandoc-latex:1.3.0```
 
-- You can use the above container as a standalone environment to run any code from the command line. For example, to compile [manuscripts/rasi/paper_template/maintext/maintext.md](manuscripts/rasi/paper_template/maintext/maintext.md), run:
+- You can use the above container as a standalone environment to run any code from the command line. For example, to compile [manuscripts/rasi/paper_template/maintext/maintext.md][manuscripts/kchen/dicodon/maintext/maintext.md](https://github.com/rasilab/github_demo/tree/main/manuscripts/kchen/dicodon/maintext/maintext.md), run:
 
 ```docker exec -w $(pwd) pandoc-latex:1.3.0 pandoc maintext.md --filter=pandoc-svg.py --citeproc --template=template.tex --metadata-file=pandoc-metadata.yaml --pdf-engine=xelatex -o maintext.pdf```
 
-### Remote tunnels
-- See instructions [here](https://github.com/rasilab/r_python/pkgs/container/r_python) for how to set up remote tunnels to perform interactive analyses within a container in VSCode.
+- You can also use any of the above containers from within VSCode. For example, we commonly use the [R and Python](https://github.com/rasilab/r_python/pkgs/container/r_python) container for interactive analyses (e.g. Jupyter notebooks) in VSCode from our institution's cluster. See instructions [here](https://github.com/rasilab/r_python/pkgs/container/r_python#how-to-use-the-singularity-container-for-interactive-data-analysis-in-r-and-python) for how to set this up.
 
 ## Presentations
 
-- Write your presentations as markdown files following the template here.
+- Write your presentations as markdown files following the template [here](https://github.com/rasilab/github_demo/blob/main/presentations/kchen/20241214_thesis_defense/presentation.md).
 - Use [vscode-reveal](https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal) extension to open or export the markdown file as a reveal.js presentation.
