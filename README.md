@@ -15,7 +15,7 @@
 ```
 experiments
     |--USER
-        |--ISSUENUMBER_EXPNUMBER_short_desc.md
+        |--ISSUENUMBER_short_desc.md
 ```
 
 ### Analysis
@@ -39,15 +39,15 @@ analysis
                     |--summary_table_1.csv
                     |--summary_table_2.csv
                 |--figures
-                    |--summary_figure_1.csv
-                    |--summary_figure_2.csv
+                    |--summary_figure_1.png
+                    |--summary_figure_2.png
 ```
 
 ### Manuscripts
 ```
 manuscripts
     |--USER
-        |--YYYY_manuscript_short_name
+        |--manuscript_short_name
             |--maintext
                 |--maintext.md
                 |--bibliography.yaml
