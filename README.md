@@ -64,7 +64,7 @@ analysis
 
 ```
 manuscripts
-    |--USER
+    |--LABMEMBER_A
         |--manuscript_short_name
             |--maintext
                 |--maintext.md
@@ -84,7 +84,7 @@ manuscripts
 
 ```
 grants
-    |--USER
+    |--LABMEMBER_A
         |--YYYY_grant_short_name
             |--research_proposal.md
             |--bibliography.yaml
@@ -101,6 +101,7 @@ grants
 
 ```
 presentations
+    |--LABMEMBER_A
     |--USER
         |--YYYYMMDD_presentation_short_desc
             |--presentation.md
