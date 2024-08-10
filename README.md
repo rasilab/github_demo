@@ -12,38 +12,56 @@
 - The described structure allows all users to be able push to the ```main``` branch without introducing merge conflicts, so we do not generally find added benefit in using branches.
 
 ### Experiments
+
 ```
 experiments
-    |--USER
-        |--ISSUENUMBER_short_desc.md
+    |--LABMEMBER_A
+        |--ISSUENUMBER_1_lab_notebook_ngs_short_desc.md
+    |--LABMEMBER_B
+        |--ISSUENUMBER_2_lab_notebook_flow_short_desc.md
 ```
 
 ### Analysis
+
 ```
 analysis
-    |--USER
-        |--ANALYSIS_TYPE (eg. riboseq)
-            |--ISSUENUMBER_short_desc
+    |--LABMEMBER_A
+        |--ANALYSIS_TYPE (eg. NGS)
+            |--ISSUENUMBER_1_short_desc
                 |--data 
-                    |--gencode
-                        |--gencode.v26.gtf.gz
-                    |--fastq
+                    |--data_type_1 (eg. genome)
+                        |--chromosome.fasta
+                    |--data_type_2 (eg. sra)
                         |--SRRnnnnnn.fastq.symbolic_link
                 |--scripts
-                    |--analyze_riboseq.ipynb
-                    |--download_from_sra.ipynb
-                    |--Snakefile
+                    |--analyze_in_R_python.ipynb
+                    |--snakemake_workflow.smk
+                    |--download_data_from_remote_folder.sh
                 |--annotations 
-                    |--sample_annotations.csv
+                    |--sample_metadata.csv
                 |--tables
-                    |--summary_table_1.csv
-                    |--summary_table_2.csv
+                    |--processed_summary_table.csv
                 |--figures
-                    |--summary_figure_1.png
-                    |--summary_figure_2.png
+                    |--summary_fig.png
+    |--LABMEMBER_B
+        |--ANALYSIS_TYPE (eg. flow)
+            |--ISSUENUMBER_2_short_desc
+                |--data 
+                    |--data_type_1 (eg. facs)
+                        |--sample_1.fcs
+                        |--sample_2.fcs
+                |--scripts
+                    |--analyze_in_R_python.ipynb
+                |--annotations 
+                    |--sample_metadata.csv
+                |--tables
+                    |--processed_summary_table.csv
+                |--figures
+                    |--summary_fig.png
 ```
 
 ### Manuscripts
+
 ```
 manuscripts
     |--USER
@@ -51,43 +69,42 @@ manuscripts
             |--maintext
                 |--maintext.md
                 |--bibliography.yaml
-                |--template.tex
-                |--pandoc-svg.py
-                |--JOURNAL_STYLE.csl
+                |--latex_template.tex
+                |--bibliography_style.csl
                 |--svg
-                    |--figure-1.svg
-                    |--figure-2.svg
+                    |--figure_1.svg
+                    |--figure_2.svg
             |--cover_letter
                 |--cover_letter.md
-                |--template.tex
-                |--signature_image.png
-                |--institution_logo.png
+                |--latex_template.tex
 ```
 
+
 ### Grants & Fellowships
+
 ```
 grants
     |--USER
         |--YYYY_grant_short_name
             |--research_proposal.md
             |--bibliography.yaml
-            |--template.tex
-            |--pandoc-svg.py
-            |--JOURNAL_STYLE.csl
+            |--latex_template.tex
+            |--bibliography_style.csl
             |--svg
-                |--figure-1.svg
-                |--figure-2.svg
-            |--project_summary.md
+                |--figure_1.svg
+                |--figure_2.svg
+            |--project_abstract.md
             |--budget_justification.md
 ```
 
 ### Presentations
+
 ```
 presentations
     |--USER
         |--YYYYMMDD_presentation_short_desc
             |--presentation.md
-            |--STYLE.css
+            |--html_style.css
             |--svg
                 |--figure-1.svg
                 |--figure-2.svg
