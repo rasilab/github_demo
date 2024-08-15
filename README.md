@@ -32,7 +32,7 @@ analysis
                     |--data_type_1 (eg. genome)
                         |--chromosome.fasta
                     |--data_type_2 (eg. sra)
-                        |--SRRnnnnnn.fastq.symbolic_link
+                        |--SRRnnnnnn.fastq
                 |--scripts
                     |--analyze_in_R_python.ipynb
                     |--snakemake_workflow.smk
@@ -121,13 +121,17 @@ presentations
   - [R and Python](https://github.com/rasilab/r_python/pkgs/container/r_python)
   - [Pandoc-latex](https://github.com/rasilab/pandoc-latex/pkgs/container/pandoc-latex)
 - To start a container from the command line on your computer, do:
-```docker pull ghcr.io/rasilab/pandoc-latex:1.3.0```
 
-```docker run -i -d --name pandoc-latex -v $HOME:$HOME ghcr.io/rasilab/pandoc-latex:1.3.0```
+```bash
+docker pull ghcr.io/rasilab/pandoc-latex:1.3.0
+docker run -i -d --name pandoc-latex -v $HOME:$HOME ghcr.io/rasilab/pandoc-latex:1.3.0
+```
 
-- You can use the above container as a standalone environment to run any code from the command line. For example, to compile [manuscripts/rasi/paper_template/maintext/maintext.md][manuscripts/kchen/dicodon/maintext/maintext.md](https://github.com/rasilab/github_demo/tree/main/manuscripts/kchen/dicodon/maintext/maintext.md), run:
+- You can use the above container as a standalone environment to run any code from the command line. For example, to compile [manuscripts/kchen/dicodon/maintext/maintext.md](https://github.com/rasilab/github_demo/tree/main/manuscripts/kchen/dicodon/maintext/maintext.md), run:
 
-```docker exec -w $(pwd) pandoc-latex:1.3.0 pandoc maintext.md --filter=pandoc-svg.py --citeproc --template=template.tex --metadata-file=pandoc-metadata.yaml --pdf-engine=xelatex -o maintext.pdf```
+```bash
+docker exec -w $(pwd) pandoc-latex:1.3.0 pandoc maintext.md --filter=pandoc-svg.py --citeproc --template=template.tex --metadata-file=pandoc-metadata.yaml --pdf-engine=xelatex -o maintext.pdf
+```
 
 - You can also use any of the above containers from within VSCode. For example, we commonly use the [R and Python](https://github.com/rasilab/r_python/pkgs/container/r_python) container for interactive analyses (e.g. Jupyter notebooks) in VSCode from our institution's cluster. See instructions [here](https://github.com/rasilab/r_python/pkgs/container/r_python#how-to-use-the-singularity-container-for-interactive-data-analysis-in-r-and-python) for how to set this up.
 
