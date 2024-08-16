@@ -1,8 +1,0 @@
-mainfont: Helvetica
-fontsize: 11pt
-linkcolor: blue
-geometry:
-  - margin=0.5in
-linestretch: 1
-bibliography: ../maintext/bibliography.json
-csl: cell.csl
