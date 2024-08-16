@@ -1,5 +1,5 @@
 bibliography: bibliography.json
-csl: nucleic-acids-research.csl
+csl: pandoc/nature.csl
 link-citations: true
 geometry:
 - margin=0.5in
