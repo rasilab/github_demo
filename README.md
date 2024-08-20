@@ -1,7 +1,7 @@
 # GitHub is an effective platform for collaborative and reproducible laboratory research
 
 ## Getting Started
-- This repository is an example to demonstrate the organizational principles discussed in [Chen et al., 2024](paperurl). Please refer to the text for more details.
+- This repository is an example to demonstrate the organizational principles discussed in [Chen et al., 2024](https://arxiv.org/abs/2408.09344).
 - In each project's repository, open an Issue to discuss ideas, experiments, analyses, or literature.
   - Create Issue templates (e.g. for Literature, Ideas, Experiments, Analyses) to streamline this process.
 
